@@ -41,6 +41,15 @@
                      <span class="hide-menu">Orders</span>
                  </a>
              </li>
+
+             <li class="sidebar-item">
+                 <a class="sidebar-link" href="{{ route('my-account') }}" aria-expanded="false">
+                     <span>
+                         <i class="ti ti-mail fs-6"></i>
+                     </span>
+                     <span class="hide-menu">My Account</span>
+                 </a>
+             </li>
          </ul>
      </nav>
      <!-- End Sidebar navigation -->

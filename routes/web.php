@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Dashboard\{
     MenuController,
     OrderController,
+    ProfileController,
+
 };
 
 /*
@@ -36,6 +38,10 @@ Route::get('/register-customer', function(){
 Route::get('/register-merchant', function(){
     return view('auth.register-merchant');
 })->name('register-merchant');
+
+
+Route::get('/my-account', [ProfileController::class, 'index'])->name('my-account');
+Route::post('/my-account', [ProfileController::class, 'update'])->name('my-account.update');
 
 Route::resource('menus', MenuController::class);
 Route::resource('orders', OrderController::class);

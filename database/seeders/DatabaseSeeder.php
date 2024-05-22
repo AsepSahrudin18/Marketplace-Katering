@@ -16,6 +16,7 @@ class DatabaseSeeder extends Seeder
     {
         $this->call(MarketplaceCatering\RoleTableSeeder::class);
         $this->call(MarketplaceCatering\MenuTableSeeder::class);
+        $this->call(MarketplaceCatering\UserTableSeeder::class);
         // \App\Models\User::factory(10)->create();
     }
 }

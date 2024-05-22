@@ -20,6 +20,11 @@ return new class extends Migration
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
 
+            $table->string('address')->nullable();
+            $table->string('contact')->nullable();
+            $table->string('description')->nullable();
+            $table->string('profile_picture')->nullable();
+
             $table->unsignedBigInteger('role_id');
             $table->foreign('role_id')->references('id')->on('roles');
 
